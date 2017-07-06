@@ -16,4 +16,16 @@ $(document).ready(function() {//this tells jquery to load and be ready for the e
     $("ul#cat").prepend("<li>Me-You</li>");
     $("ul#dog").prepend("<li>Woof-Ya!</li>")
   });
+  $("div#kitten").click(function() {
+    $("div#kitten").after("<img src='img/kitten.jpg'>");
+    $("img").click(function() {
+      $(this).remove();
+    });
+  });
+  $("div#puppy").click(function() {
+    $("div#puppy").after("<img src='img/puppy.jpg'>");
+    $("img").click(function() {
+      $(this).remove();
+    });
+  });
 });
